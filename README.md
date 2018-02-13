@@ -69,9 +69,9 @@ Lastly, the activity labels are merged into the **data** data frame.
 
 To create a tidy data set, the data is first aggregated by subject and type of activity. Then means are calculated and arranged by subject and activity.
 
-In the tidy dataset, called **tidy_data.txt**, the columns names are transformed to have a "mean" appended to the front of the column name, e.g. from **"TimeBodyAccMeanX"** to **"meanTimeBodyAccMeanX"**
+In the tidy dataset, called **tidy_data.txt**, the column names corresponding to the 66 measurement features are transformed to have **"mean"** at the front of the column name, e.g. from **"TimeBodyAccMeanX"** to **"meanTimeBodyAccMeanX"**
 
-Write the **tidy_data.txt** file to file.
+At the end of the script, the **tidy_data.txt** file is written to file.
 
 ## Tidyness of the constructed dataset ##
 
