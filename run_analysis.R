@@ -114,7 +114,7 @@ data <- rbind(test_data, train_data)
 # Merge activity labels with data dataset
 data <- merge(data, activities, by = "activityID")
 
-# Group means and averages by id and activity
+# Group by subjectID and activityType and take averages of all measurements
 tidy_data <- data %>%
     group_by(subjectID, activityType) %>%
     summarize_all(funs(mean)) %>%
@@ -124,7 +124,8 @@ tidy_data <- data %>%
 tidy_data$activityID <- NULL
 
 # Add mean to the column names that represent measurements
-colnames(tidy_data)[3:68] <- paste("mean", colnames(tidy_data)[3:68], sep = "")
+colnames(tidy_data)[3:68] <-
+    paste("mean", colnames(tidy_data)[3:68], sep = "")
 
 # Set working directory
 setwd(WD)
