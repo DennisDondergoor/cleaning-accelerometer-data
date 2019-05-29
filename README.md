@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Cleaning Accelerometer and Gyroscope Data
 
 This repo contains my project work for the "Getting and Cleaning Data" course, which is the 3rd course of the [Johns Hopkins University Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on Coursera.
